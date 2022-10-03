@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Anubhav Agrawal</h1>
-<h3 align="center">An AI/DL passionate from India</h3>
+<h3 align="center">A 21yrs old developer from India</h3>
 
 - 📫 How to reach me **emailanubhavagrawal@gmail.com**
 
