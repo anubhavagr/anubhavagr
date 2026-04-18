@@ -1,13 +1,70 @@
-<h1 align="center">Hi 👋, I'm Anubhav Agrawal</h1>
-<!-- <h3 align="center">A 23yrs old developer from India</h3> -->
+<div align="center">
 
-- 📫 How to reach me **emailanubhavagrawal@gmail.com**
+# `anubhav-agrawal/ai-engineer`
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/@experiencetwts" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@experiencetwts" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/anubhav-agrawal-547a3419b" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/anubhav-agrawal-547a3419b" height="30" width="40" /></a>
-</p>
+[![Version](https://img.shields.io/badge/Version-3.0-blue?style=flat-square)]()
+[![ARR](https://img.shields.io/badge/Revenue-%24200K%2B-success?style=flat-square)]()
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
+**Production Deep learning. Real-time inference. End-to-end ML systems.**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anubhav-agrawal-547a3419b)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:anubhavagr.mail@gmail.com)
+
+</div>
+
+---
+
+## Quick Start
+
+```python
+from anubhav_agrawal import AIEngineer
+
+engineer = AIEngineer(
+    location="Delhi, India",
+    education="M.Tech AI/ML @ BITS Pilani (2027)",
+    stack={
+        "languages":    ["python", "c++", "cuda"],
+        "deep_learning":["pytorch", "transformers"],
+        "vision":       ["opencv", "albumentations", "torchvision"],
+        "genai":        ["langgraph", "langchain", "mongodb"],
+        "deploy":       ["tensorrt", "onnx", "docker"],
+        "classical":    ["sklearn", "xgboost"],
+        "data":         ["numpy", "pandas", "scipy", "matplotlib"],
+    },
+    fps_record=600,
+)
+engineer.deploy()  # → Running at Griphic since Jan 2026
+```
+
+## Specs
+
+| | |
+|---|---|
+| **Current** | AI Engineer-2 @ Griphic — building production RAG systems |
+| **Prev** | ML Engineer & Team Lead @ Innvolution Healthcare (2.5 yrs) |
+| **Edge** | End-to-end ML — from research to optimized production deployment |
+| **Domain** | Computer vision, medical imaging, RAG systems, Deep learning |
+
+## Stack
+
+<div align="center">
+<img src="https://skillicons.dev/icons?i=python,pytorch,docker,ubuntu,git,github,opencv,mongodb&perline=9" />
+</div>
+
+## Citation
+
+```bibtex
+@engineer{anubhav_agrawal,
+  title     = {Production AI/ML Engineer},
+  note      = {600+ FPS inference. End-to-end ML. Open to opportunities.},
+  email     = {anubhavagr.mail@gmail.com}
+}
+```
+
+<div align="center">
+
+[![Email](https://img.shields.io/badge/Reach_Out-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:anubhavagr.mail@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anubhav-agrawal-547a3419b)
+
+<!-- ![Stats](https://github-readme-stats.vercel.app/api?username=anubhavagr&show_icons=true&theme=tokyonight&hide_border=true)-->
+</div>
