@@ -1,70 +1,63 @@
 <div align="center">
 
-# `anubhav-agrawal/ai-engineer`
+# Anubhav Agrawal
 
-[![Version](https://img.shields.io/badge/Version-3.0-blue?style=flat-square)]()
-[![ARR](https://img.shields.io/badge/Revenue-%24200K%2B-success?style=flat-square)]()
+**Making ML models run fast on real hardware.**
 
-**Production Deep learning. Real-time inference. End-to-end ML systems.**
+ONNX · TensorRT · INT8/FP16 quantization · llama.cpp/MLX on-device inference
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anubhav-agrawal-547a3419b)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:anubhavagr.mail@gmail.com)
+[Website](https://anubhavagr.github.io) · [LinkedIn](https://www.linkedin.com/in/anubhav-agr/) · [Email](mailto:anubhavagr.mail@gmail.com)
 
 </div>
 
 ---
 
-## Quick Start
+I work on the part of ML that happens *after* training: exporting PyTorch through ONNX into
+TensorRT, quantizing to INT8/FP16 without quietly losing accuracy, profiling where the
+milliseconds actually go, and serving LLMs on-device instead of someone else's cloud.
 
-```python
-from anubhav_agrawal import AIEngineer
+Currently **AI Engineer II at Griphic** — sole engineer on a production multi-agent LLM
+service. Token-level cost telemetry cut generation cost 60%; guardrails stop prompt injection
+for at most 2 extra LLM calls on clean traffic; 99.5% of output ships with zero human review.
 
-engineer = AIEngineer(
-    location="Delhi, India",
-    education="M.Tech AI/ML @ BITS Pilani (2027)",
-    stack={
-        "languages":    ["python", "c++", "cuda"],
-        "deep_learning":["pytorch", "transformers"],
-        "vision":       ["opencv", "albumentations", "torchvision"],
-        "genai":        ["langgraph", "langchain", "mongodb"],
-        "deploy":       ["tensorrt", "onnx", "docker"],
-        "classical":    ["sklearn", "xgboost"],
-        "data":         ["numpy", "pandas", "scipy", "matplotlib"],
-    },
-    fps_record=600,
-)
-engineer.deploy()  # → Running at Griphic since Jan 2026
-```
+Before that, 2.5 years of healthcare ML at Innvolution: an X-ray super-resolution product
+taken to **$200K+ ARR** and through clinical trials — sub-5 ms per frame for 4× upsampling on
+an RTX 4090 after INT8/FP16 post-training quantization — with 3 filed patents and a
+6-engineer ML team along the way.
 
-## Specs
+M.Tech AI/ML @ BITS Pilani, 2027.
 
-| | |
-|---|---|
-| **Current** | AI Engineer-2 @ Griphic — building production RAG systems |
-| **Prev** | ML Engineer & Team Lead @ Innvolution Healthcare (2.5 yrs) |
-| **Edge** | End-to-end ML — from research to optimized production deployment |
-| **Domain** | Computer vision, medical imaging, RAG systems, Deep learning |
+## 🔬 What's on this profile
 
-## Stack
+### [ipic](https://github.com/anubhavagr/ipic) — fully offline multimodal search
+Search text, PDFs, images, audio, and video with **no cloud and no telemetry**. CLIP and BGE
+embeddings run entirely on-device; dense, BM25, and acoustic lanes are fused by reciprocal
+rank fusion over mmap'd i8-quantized vector stores. Exact scan beats HNSW at file-index
+scale: **26–32 ms queries, ~2,500 files/s indexing on a 350k-file drive.**
+→ [Architecture write-up](https://anubhavagr.github.io/posts/ipic-architecture.html)
 
-<div align="center">
-<img src="https://skillicons.dev/icons?i=python,pytorch,docker,ubuntu,git,github,opencv,mongodb&perline=9" />
-</div>
+### [inference-lab](https://github.com/anubhavagr/inference-lab) — LLM serving benchmarks, done fairly
+A reproducible harness holding mlx-lm and llama.cpp to one fairness contract — fixed prompts,
+greedy decoding, matched budgets — on Apple Silicon. Findings worth stealing: decode is
+**memory-bandwidth-bound** (~273 GB/s on an M4 Pro); K isolated server instances return
+**+9% for 3× the memory**; throughput stays flat from 1 to 32 users because a per-instance
+lock serializes each engine.
+→ [Full write-up](https://anubhavagr.github.io/posts/inference-lab.html)
 
-## Citation
+### [anubhavagr.github.io](https://anubhavagr.github.io) — the write-ups
+Long-form notes on all of the above: architecture decisions, benchmark methodology, and the
+ONNX-export and quantization pitfalls I had to debug the hard way.
 
-```bibtex
-@engineer{anubhav_agrawal,
-  title     = {Production AI/ML Engineer},
-  note      = {600+ FPS inference. End-to-end ML. Open to opportunities.},
-  email     = {anubhavagr.mail@gmail.com}
-}
-```
+## 🛠️ Stack
 
-<div align="center">
+- **Day job:** Python, PyTorch, ONNX/ONNX Runtime, TensorRT (incl. trtexec), FastAPI,
+  Docker, GitLab CI/CD, Grafana/Loki/Tempo
+- **On-device:** llama.cpp, GGUF, MLX/mlx-lm, INT8/FP16 PTQ with calibration
+- **Learning by shipping:** Rust — ipic is written in it; I'm working through the language
+  properly, in public
+- **Previously heavy:** OpenCV, medical imaging (fluoroscopy, segmentation, super-resolution)
 
-[![Email](https://img.shields.io/badge/Reach_Out-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:anubhavagr.mail@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anubhav-agrawal-547a3419b)
+## 📫
 
-<!-- ![Stats](https://github-readme-stats.vercel.app/api?username=anubhavagr&show_icons=true&theme=tokyonight&hide_border=true)-->
-</div>
+Building inference that has to be faster, cheaper, or smaller?
+[Email me](mailto:anubhavagr.mail@gmail.com) — I enjoy comparing notes.
