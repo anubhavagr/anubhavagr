@@ -6,7 +6,7 @@
 
 ONNX · TensorRT · INT8/FP16 quantization · llama.cpp/MLX on-device inference
 
-[Website](https://anubhavagr.github.io) · [LinkedIn](https://www.linkedin.com/in/anubhav-agr/) · [Email](mailto:anubhavagr.mail@gmail.com)
+[Website](https://anubhavagr.github.io) · [LinkedIn](https://www.linkedin.com/in/anubhav-agr/) · [Email](mailto:anubhavagr.mail@gmail.com)· [X](https://x.com/experiencetwts)
 
 </div>
 
