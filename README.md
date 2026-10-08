@@ -20,7 +20,7 @@ Currently **AI Engineer II at Griphic** — sole engineer on a production multi-
 service. Token-level cost telemetry cut generation cost 60%; guardrails stop prompt injection
 for at most 2 extra LLM calls on clean traffic; 99.5% of output ships with zero human review.
 
-Before that, 2.5 years of healthcare ML at Innvolution: an X-ray super-resolution product
+Before that, 3 years of healthcare ML at Innvolution: an X-ray super-resolution product
 taken to **$200K+ ARR** and through clinical trials — sub-5 ms per frame for 4× upsampling on
 an RTX 4090 after INT8/FP16 post-training quantization — with a granted Indian patent (No. 604176, AI-Powered X-ray Image
 Enhancement) plus two applications pending, and a 6-engineer ML team along the way.
