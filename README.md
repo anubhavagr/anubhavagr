@@ -22,8 +22,8 @@ for at most 2 extra LLM calls on clean traffic; 99.5% of output ships with zero 
 
 Before that, 2.5 years of healthcare ML at Innvolution: an X-ray super-resolution product
 taken to **$200K+ ARR** and through clinical trials — sub-5 ms per frame for 4× upsampling on
-an RTX 4090 after INT8/FP16 post-training quantization — with 3 filed patents and a
-6-engineer ML team along the way.
+an RTX 4090 after INT8/FP16 post-training quantization — with a granted Indian patent (No. 604176, AI-Powered X-ray Image
+Enhancement) plus two applications pending, and a 6-engineer ML team along the way.
 
 M.Tech AI/ML @ BITS Pilani, 2027.
 
@@ -43,6 +43,15 @@ greedy decoding, matched budgets — on Apple Silicon. Findings worth stealing: 
 **+9% for 3× the memory**; throughput stays flat from 1 to 32 users because a per-instance
 lock serializes each engine.
 → [Full write-up](https://anubhavagr.github.io/posts/inference-lab.html)
+
+### Contributing upstream
+- **[onnxruntime #33091](https://github.com/microsoft/onnxruntime/pull/33091)** — merged:
+  fixed a ReshapeFusion crash in the graph optimizer when the fused Reshape's shape input
+  is node-produced.
+- **[pytorch #200180](https://github.com/pytorch/pytorch/pull/200180)** — open: make the
+  ONNX exporter emit int32 quantization as valid ops instead of invalid QuantizeLinear.
+- **[mlx-lm #1944](https://github.com/ml-explore/mlx-lm/pull/1944)** — open: enforce the
+  prompt-cache byte budget continuously and make the /health endpoint stall-aware.
 
 ### [anubhavagr.github.io](https://anubhavagr.github.io) — the write-ups
 Long-form notes on all of the above: architecture decisions, benchmark methodology, and the
