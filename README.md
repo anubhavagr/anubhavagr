@@ -48,7 +48,7 @@ lock serializes each engine.
 - **[onnxruntime #33091](https://github.com/microsoft/onnxruntime/pull/33091)** — merged:
   fixed a ReshapeFusion crash in the graph optimizer when the fused Reshape's shape input
   is node-produced.
-- **[pytorch #200180](https://github.com/pytorch/pytorch/pull/200180)** — open: make the
+- **[pytorch #200180](https://github.com/pytorch/pytorch/pull/200180)** — merged: make the
   ONNX exporter emit int32 quantization as valid ops instead of invalid QuantizeLinear.
 - **[mlx-lm #1944](https://github.com/ml-explore/mlx-lm/pull/1944)** — open: enforce the
   prompt-cache byte budget continuously and make the /health endpoint stall-aware.
