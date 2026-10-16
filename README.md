@@ -44,15 +44,7 @@ greedy decoding, matched budgets — on Apple Silicon. Findings worth stealing: 
 lock serializes each engine.
 → [Full write-up](https://anubhavagr.github.io/posts/inference-lab.html)
 
-### Contributing upstream
-- **[onnxruntime #33091](https://github.com/microsoft/onnxruntime/pull/33091)** — merged:
-  fixed a ReshapeFusion crash in the graph optimizer when the fused Reshape's shape input
-  is node-produced.
-- **[pytorch #200180](https://github.com/pytorch/pytorch/pull/200180)** — landed in main:
-  the ONNX exporter emits int32 quantization as valid ops instead of invalid
-  QuantizeLinear (PR shows Closed — PyTorch's merge bot lands via rebase).
-- **[mlx-lm #1944](https://github.com/ml-explore/mlx-lm/pull/1944)** — open: enforce the
-  prompt-cache byte budget continuously and make the /health endpoint stall-aware.
+**Upstream:** fixes landed in ONNX Runtime and PyTorch; one open in mlx-lm.
 
 ### [anubhavagr.github.io](https://anubhavagr.github.io) — the write-ups
 Long-form notes on all of the above: architecture decisions, benchmark methodology, and the
